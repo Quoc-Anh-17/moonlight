@@ -1,0 +1,48 @@
+### Get all the users in database
+GET http://localhost:8080/getall
+
+### Sign Up new User
+POST http://localhost:8080/api/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "heaxn",
+    "password": "an12asd3"
+}
+### Login
+POST http://localhost:8080/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "hexagon",
+    "password": "admin123"
+}
+
+### Logout
+GET http://localhost:8080/logout
+
+### Delete all users
+GET http://localhost:8080/delete
+
+
+### Get all of my logs
+PUT http://localhost:9999/dev/log
+content-type: application/json
+
+{
+    "name": "quocanhbk17@gmail.com"
+}
+
+### Post a new log
+POST http://localhost:9999/dev/log
+content-type: application/json
+
+{
+    "id": "123123",
+    "name": "quocanhbk17@gmail.com",
+    "log": "Bad log"
+}
+
+### Delete a log
+DELETE http://localhost:9999/dev/log
+content-type: application/json

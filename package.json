@@ -1,0 +1,30 @@
+{
+  "name": "moonlight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "dev2": "concurrently \"npm run dev\" \"npm start --prefix client\" "
+  },
+  "author": "Hexagon",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.28.0",
+    "mongoose": "^5.10.5",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.11",
+    "redux-persist": "^6.0.0",
+    "unstated-next": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
