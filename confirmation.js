@@ -12,7 +12,7 @@ module.exports.selfVerify = async (receiver, token) => {
         from: "Hexagon",
         to: receiver,
         subject: "[Hexagonia] Email Confirmation",
-        text: `Please click the following link to confirm your email http://localhost:8080/api/confirmation/self/${token}`
+        text: `Please click the following link to confirm your email https://hexagon-moon-light.herokuapp.com/api/confirmation/self/${token}`
     })
 }
 module.exports.staffVerify = async (receiver, token) => {
@@ -20,6 +20,6 @@ module.exports.staffVerify = async (receiver, token) => {
         from: "Hexagon",
         to: receiver,
         subject: "[Hexagonia] Staff Registeration Confirmation",
-        text: `Please confirm this person as a staff of your company by clicking on the following link http://localhost:8080/api/confirmation/self/${token}`
+        text: `Please confirm this person as a staff of your company by clicking on the following link https://hexagon-moon-light.herokuapp.com/api/confirmation/self/${token}`
     })
 }
