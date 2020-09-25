@@ -27,6 +27,7 @@ app.use('/api', authRoutes)
 app.use('/profile', profileRoutes)
 
 app.use('/dev', devRoutes)
+
 //Redirect to app
 app.get('/*', requireAuth, (req, res) => {
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
